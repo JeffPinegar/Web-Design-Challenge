@@ -1,3 +1,23 @@
+<!-- 
+  Jeff Pinegar
+  Web_design_challenge
+  Dec. 14, 2022
+
+  Other files:
+      data.html
+      comparison.html
+
+  Other Folders:
+    assets: contains images and CSS files
+    Resources:  Contains CSV files
+    visualization: HTML pages that display visualizations
+ -->
+
+
+
+
+
+
 <!DOCTYPE html>
 <html lang="en-us">
   <head>
@@ -9,7 +29,10 @@
     <title>Bootstrap Visualization Dashboard</title>
 
     <!-- Boostrap Stylesheet -->
+    <!-- I updated the bootstrap.min.css to the current version 4.3.1.  The one provided was 3.3.7 -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" media="screen">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+
 
     <!-- Our own CSS stylesheet -->
     <link rel="stylesheet" href="assets/css/styles.css" media="screen">
@@ -17,8 +40,60 @@
   </head>
 
   <body>
+
+    <h1>Web Design Challenge</h1>
+
+
+
     <!-- Start of navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+  
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <!-- ********* Home ************************* Home ******************* Home ******************* -->
+            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <!-- ********* Visualization ************************* Visualization ******************* Visualization ******************* -->            
+            <a class="nav-link" href="Visualization.html">Visualization</a>
+          </li>
+          <li class="nav-item">
+            <!-- ********* Comparisons ************************* Comparisons ******************* Comparisons ******************* -->            
+            <a class="nav-link" href="comparison.html">Comparisons</a>
+          </li>
+          <li class="nav-item">
+            <!-- ********* Data ************************* Data ******************* Data ******************* -->            
+            <a class="nav-link" href="data.html">Data</a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <!-- <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button> -->
+        </form>
+      </div>
+    </nav>
+
+
     <!-- End of navbar -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     <!-- Start of container -->
           <!-- Start of Visualizations imageNav Area -->
