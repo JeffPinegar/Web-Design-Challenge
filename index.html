@@ -26,9 +26,14 @@
     <title>Bootstrap Visualization Dashboard</title>
 
     <!-- Boostrap Stylesheet -->
-    <!-- I updated the bootstrap.min.css to the current version 4.3.1.  The one provided was 3.3.7 -->
+    <!-- Reset the stylesheets -->
+    <link rel="stylesheet" href="assets/css/reset.css" media="screen">
+
+     <!-- I updated the bootstrap.min.css to the current version 4.3.1.  The one provided was 3.3.7 -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" media="screen">
     <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+
+
 
 
     <!-- Our own CSS stylesheet -->
@@ -85,19 +90,155 @@
     <h1>Web Design Challenge</h1>
 
 
-
-
-
-
-
-
-
-
-
-
-
     <!-- Start of container -->
           <!-- Start of Visualizations imageNav Area -->
+
+<
+
+          <!-- Table Navigations -->
+          <div class="row">
+            <div class="col">
+              <h2 class="text-center">Visualization Overview</h2>
+              <!-- <ul class="nav nav-tabs"> -->
+              <ul class="nav nav-tabs mb-3" id="ex1" role="tablist">    
+                
+                <li class="nav-item" role="presentation">
+                  <a
+                    class="nav-link active"
+                    id="ex1-tab-1"
+                    data-toggle="tab"
+                    href="#ex1-tabs-1"
+                    role="tab"
+                    aria-controls="ex1-tabs-1"
+                    aria-selected="true"
+                    >Cloudiness</a
+                  >
+                </li>
+
+                <li class="nav-item" role="presentation">
+                  <a
+                    class="nav-link"
+                    id="ex1-tab-2"
+                    data-toggle="tab"
+                    href="#ex1-tabs-2"
+                    role="tab"
+                    aria-controls="ex1-tabs-2"
+                    aria-selected="false"
+                    >Humidity</a
+                  >
+                </li>
+
+                <li class="nav-item" role="presentation">
+                  <a
+                    class="nav-link"
+                    id="ex1-tab-3"
+                    data-toggle="tab" 
+                    href="#ex1-tabs-3"
+                    role="tab"
+                    aria-controls="ex1-tabs-3"
+                    aria-selected="false"
+                    >Temperature</a
+                  >
+                </li>
+
+                <li class="nav-item" role="presentation">
+                  <a
+                    class="nav-link"
+                    id="ex1-tab-3"
+                    data-toggle="tab" 
+                    href="#ex1-tabs-4"
+                    role="tab"
+                    aria-controls="ex1-tabs-4"
+                    aria-selected="false"
+                    >Wind</a
+                  >
+                </li>
+
+
+              </ul>
+
+              <!-- Tabs content -->
+              <div class="tab-content" id="ex1-content">
+                <div
+                  class="tab-pane fade show active"
+                  id="ex1-tabs-1"
+                  role="tabpanel"
+                  aria-labelledby="ex1-tab-1">
+                  <br>
+                  <img src="./assets/images/Fig3_Lat_vs_Cloudiness.jpg"><br>
+                  <h3>Cloudiness Overall </h3><br>
+                  <br><br><br><br>
+                  <img src="./assets/images/Fig9_Latitude_vs_Cloudiness.jpg"><br>
+                  <h3>Cloudiness Northern Cities </h3><br>
+                  <br><br><br><br>
+                  <img src="./assets/images/Fig10_Latitude_vs_Cloudiness.jpg"><br>
+                  <h3>Cloudiness Southern Cities </h3><br>
+                  <br><br><br><br>
+                </div>
+                
+                <div 
+                  class="tab-pane fade" 
+                  id="ex1-tabs-2" 
+                  role="tabpanel" 
+                  aria-labelledby="ex1-tab-2"
+                  aria-selected="true">
+                  <br>
+                  <img src="./assets/images/Fig2_Lat_vs_Humidity.jpg"><br>
+                  <h3>Humidity Overall </h3><br>
+                  <br><br><br><br>
+                  <img src="./assets/images/Fig7_Latitude_vs_Humidity.jpg"><br>
+                  <h3>Humidity Northern Cities </h3><br>
+                  <br><br><br><br>
+                  <img src="./assets/images/Fig8_Latitude_vs_Humidity.jpg"><br>
+                  <h3>Humidity Southern Cities </h3><br>
+                  <br><br><br><br>
+                </div>
+                
+                <div 
+                  class="tab-pane fade" 
+                  id="ex1-tabs-3" 
+                  role="tabpanel" 
+                  aria-labelledby="ex1-tab-3">
+                  <br>
+                  <img src="./assets/images/Fig1_Lat_vs_Temp.jpg"><br>
+                  <h3>Temperature Overall </h3><br>
+                  <br><br><br><br>
+                  <img src="./assets/images/Fig5_Latitude_vs_Max_Temp.jpg"><br>
+                  <h3>Temperature Northern Cities </h3><br>
+                  <br><br><br><br>
+                  <img src="./assets/images/Fig6_Latitude_vs_Max_Temp.jpg"><br>
+                  <h3>Temperature Southern Cities </h3><br>
+                  <br><br><br><br>
+                </div>
+
+                <div 
+                  class="tab-pane fade" 
+                  id="ex1-tabs-4" 
+                  role="tabpanel" 
+                  aria-labelledby="ex1-tabs-4">
+                  <br>
+                  <img src="./assets/images/Fig4_Latitude_vs_Wind_speed.jpg"><br>
+                  <h3>Wind Overall </h3><br>
+                  <br><br><br><br>
+                  <img src="./assets/images/Fig11_Latitude_vs_Wind.jpg"><br>
+                  <h3>Wind Northern Cities </h3><br>
+                  <br><br><br><br>
+                  <img src="./assets/images/Fig12_Latitude_vs_Wind.jpg"><br>
+                  <h3>Wind Southern Cities </h3><br>
+                  <br><br><br><br>
+                </div>
+
+              </div>
+              <!-- Tabs content -->
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
           <!-- End of the Visualizations imageNav Area -->
     <!-- End of container -->
 
@@ -105,13 +246,20 @@
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
 
     <!-- Bootstrap CDN -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 
     <!-- Added from the bootstrap example -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     
+    
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script> -->
+   
+
+
+  
+
   </body>
 
 </html>
