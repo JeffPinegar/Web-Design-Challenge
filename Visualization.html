@@ -20,47 +20,247 @@
   </head>
 
   <body>
+    <!-- Page title -->
+    <!-- Start of container -->
+    <!-- Creates the Overall Grid -->
 
 
-    <!-- Start of navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="index.html">
-        <img src="jsp.jpg" width="60" height="30" alt="">
-      </a>
-        
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-    
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <!-- ********* Home ************************* Home ******************* Home ******************* -->
-              <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+
+
+
+
+
+    <div class="container">
+
+      <!-- Row 1 -->
+      <div class="row">
+        <!-- Start of navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <a class="navbar-brand" href="index.html">
+            <img src="jsp.jpg" width="60" height="30" alt="">
+          </a>
+
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" 
+                  aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              
+            <span class="navbar-toggler-icon"></span>
+          </button>
+      
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+                <!-- ********* Home ************************* Home ******************* Home ******************* -->
+                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <!-- ********* Comparisons ************************* Comparisons ******************* Comparisons ******************* -->            
+                <a class="nav-link" href="comparison.html">Comparisons</a>
+              </li>              
+              <li class="nav-item">
+                <!-- ********* Visualization ************************* Visualization ******************* Visualization ******************* -->            
+                <a class="nav-link active" href="Visualization.html">Visualization</a>
+              </li>
+
+              <li class="nav-item">
+                <!-- ********* Data ************************* Data ******************* Data ******************* -->            
+                <a class="nav-link" href="data.html">Data</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <!-- End of navbar -->
+      </div>
+
+
+      <!-- Row 2 -->
+      <div class="row">
+        <div class="col-md-12">
+          <!-- Page title -->
+          <h1>Visualizations</h1>
+        </div>
+      </div>
+
+      <!-- Row 3 -->
+      <div class="row">
+        <div class="col-md-12">
+          <!-- Table Navigations -->
+          <!-- <div class="row">
+            <div class="col"> -->
+          <h1 class="text-center">Visualization Overview</h1><br><br>  
+          <!-- <ul class="nav nav-tabs"> -->
+          <ul class="nav nav-tabs mb-3" id="ex1" role="tablist">    
+            
+            <li class="nav-item" role="presentation">
+              <a
+                class="nav-link active"
+                id="ex1-tab-1"
+                data-toggle="tab"
+                href="#ex1-tabs-1"
+                role="tab"
+                aria-controls="ex1-tabs-1"
+                aria-selected="true"
+                >Cloudiness</a
+              >
             </li>
-            <li class="nav-item">
-              <!-- ********* Visualization ************************* Visualization ******************* Visualization ******************* -->            
-              <a class="nav-link" href="Visualization.html">Visualization</a>
+
+            <li class="nav-item" role="presentation">
+              <a
+                class="nav-link"
+                id="ex1-tab-2"
+                data-toggle="tab"
+                href="#ex1-tabs-2"
+                role="tab"
+                aria-controls="ex1-tabs-2"
+                aria-selected="false"
+                >Humidity</a
+              >
             </li>
-            <li class="nav-item">
-              <!-- ********* Comparisons ************************* Comparisons ******************* Comparisons ******************* -->            
-              <a class="nav-link" href="comparison.html">Comparisons</a>
+
+            <li class="nav-item" role="presentation">
+              <a
+                class="nav-link"
+                id="ex1-tab-3"
+                data-toggle="tab" 
+                href="#ex1-tabs-3"
+                role="tab"
+                aria-controls="ex1-tabs-3"
+                aria-selected="false"
+                >Temperature</a
+              >
             </li>
-            <li class="nav-item">
-              <!-- ********* Data ************************* Data ******************* Data ******************* -->            
-              <a class="nav-link" href="data.html">Data</a>
+
+            <li class="nav-item" role="presentation">
+              <a
+                class="nav-link"
+                id="ex1-tab-3"
+                data-toggle="tab" 
+                href="#ex1-tabs-4"
+                role="tab"
+                aria-controls="ex1-tabs-4"
+                aria-selected="false"
+                >Wind</a
+              >
             </li>
           </ul>
+
+          <!-- Tabs content -->
+          <div class="tab-content" id="ex1-content">
+
+            <!-- Cloudiness -->
+            <div
+              class="tab-pane fade show active"
+              id="ex1-tabs-1"
+              role="tabpanel"
+              aria-labelledby="ex1-tab-1">
+              <br>
+              <h3>Overall </h3><br>
+              <img src="./assets/images/Fig3_Lat_vs_Cloudiness.jpg" width="100%"><br>
+              <p>
+                Cloudiness does not appear to be correlated with latitude with manay latitudes experiencesing the full ranges from 0% to 100% coverage.  
+                However there is a noticable gap between +/- 10 degrees with no reports of 0% Cloudiness.
+              </p>
+              <br><br><br><br>
+              <h3> Northern Cities </h3><br>
+              <img src="./assets/images/Fig9_Latitude_vs_Cloudiness.jpg"width="100%"><br>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ipsum quam, imperdiet sed libero quis, varius sagittis lectus. 
+                Morbi sed egestas neque. Mauris consectetur sem diam, a sodales turpis egestas non. Etiam consequat mattis ante, in tristique ante placerat non. 
+              </p>
+              <br><br><br><br>
+              <h3> Southern Cities </h3><br>
+              <img src="./assets/images/Fig10_Latitude_vs_Cloudiness.jpg" width="100%"><br>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ipsum quam, imperdiet sed libero quis, varius sagittis lectus. 
+                Morbi sed egestas neque. Mauris consectetur sem diam, a sodales turpis egestas non. Etiam consequat mattis ante, in tristique ante placerat non. 
+              </p><br><br><br><br>
+            </div>
+
+
+            <!-- Humidity -->
+            <div 
+              class="tab-pane fade" 
+              id="ex1-tabs-2" 
+              role="tabpanel" 
+              aria-labelledby="ex1-tab-2">
+              <br>
+              <h3> Overall </h3><br>
+              <img src="./assets/images/Fig2_Lat_vs_Humidity.jpg" width="100%"><br>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ipsum quam, imperdiet sed libero quis, varius sagittis lectus. 
+                Morbi sed egestas neque. Mauris consectetur sem diam, a sodales turpis egestas non. Etiam consequat mattis ante, in tristique ante placerat non. 
+              </p>
+              <br><br><br><br>
+              <h3> Northern Cities </h3><br>
+              <img src="./assets/images/Fig7_Latitude_vs_Humidity.jpg" width="100%"><br>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ipsum quam, imperdiet sed libero quis, varius sagittis lectus. 
+                Morbi sed egestas neque. Mauris consectetur sem diam, a sodales turpis egestas non. Etiam consequat mattis ante, in tristique ante placerat non. 
+              </p><br><br><br><br>
+              <h3> Southern Cities </h3><br>
+              <img src="./assets/images/Fig8_Latitude_vs_Humidity.jpg" width="100%"><br>
+              <br><br><br><br>
+            </div>
+
+             <!-- Temperature -->
+            <div 
+              class="tab-pane fade" 
+              id="ex1-tabs-3" 
+              role="tabpanel" 
+              aria-labelledby="ex1-tab-3">
+              <br>
+              <h3> Overall </h3><br>
+              <img src="./assets/images/Fig1_Lat_vs_Temp.jpg" width="100%"><br>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ipsum quam, imperdiet sed libero quis, varius sagittis lectus. 
+                Morbi sed egestas neque. Mauris consectetur sem diam, a sodales turpis egestas non. Etiam consequat mattis ante, in tristique ante placerat non. 
+              </p><br><br><br><br>
+              <h3> Northern Cities </h3><br>
+              <img src="./assets/images/Fig5_Latitude_vs_Max_Temp.jpg" width="100%"><br>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ipsum quam, imperdiet sed libero quis, varius sagittis lectus. 
+                Morbi sed egestas neque. Mauris consectetur sem diam, a sodales turpis egestas non. Etiam consequat mattis ante, in tristique ante placerat non. 
+              </p><br><br><br><br>
+              <h3> Southern Cities </h3><br>
+              <img src="./assets/images/Fig6_Latitude_vs_Max_Temp.jpg" width="100%"><br>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ipsum quam, imperdiet sed libero quis, varius sagittis lectus. 
+                Morbi sed egestas neque. Mauris consectetur sem diam, a sodales turpis egestas non. Etiam consequat mattis ante, in tristique ante placerat non. 
+              </p><br><br><br><br>
+            </div>
+
+            <!-- Windspeed -->
+            <div 
+              class="tab-pane fade" 
+              id="ex1-tabs-4" 
+              role="tabpanel" 
+              aria-labelledby="ex1-tabs-4">
+              <br>
+              <h3> Overall </h3><br>
+              <img src="./assets/images/Fig4_Latitude_vs_Wind_speed.jpg" width="100%"><br>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ipsum quam, imperdiet sed libero quis, varius sagittis lectus. 
+                Morbi sed egestas neque. Mauris consectetur sem diam, a sodales turpis egestas non. Etiam consequat mattis ante, in tristique ante placerat non. 
+              </p><br><br><br><br>
+              <h3> Northern Cities </h3><br>
+              <img src="./assets/images/Fig11_Latitude_vs_Wind.jpg" width="100%"><br>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ipsum quam, imperdiet sed libero quis, varius sagittis lectus. 
+                Morbi sed egestas neque. Mauris consectetur sem diam, a sodales turpis egestas non. Etiam consequat mattis ante, in tristique ante placerat non. 
+              </p><br><br><br><br>
+              <h3> Southern Cities </h3><br>
+              <img src="./assets/images/Fig12_Latitude_vs_Wind.jpg" width="100%"><br>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ipsum quam, imperdiet sed libero quis, varius sagittis lectus. 
+                Morbi sed egestas neque. Mauris consectetur sem diam, a sodales turpis egestas non. Etiam consequat mattis ante, in tristique ante placerat non. 
+              </p><br><br><br><br>
+            </div>
+          
+            <!-- Tabs content -->
+          </div>
         </div>
-      </nav>
-    <!-- End of navbar -->
-
-    <!-- Page title -->
-    <h1>Visualization Overview</h1>
-
-
-    <!-- Start of container -->
+      </div>
     <!-- End of container -->
+    </div>
 
     <!-- jQuery CDN -->
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>

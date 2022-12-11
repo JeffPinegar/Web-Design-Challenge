@@ -17,13 +17,26 @@ h1 {
   }
   
   h3 {
+    margin-top:20px;
     /* background-color:rgb(194, 197, 194);
     color: orange;
     font-size: 30px;
     font-weight: bolder; */
   }
   
+  h4 {
+    margin-top:20px;
+    color: rgb(83, 141, 126);
+    text-align: center;
+    /* background-color:rgb(194, 197, 194);
+  
+    font-size: 30px;
+    font-weight: bolder; */
+  }
+
   img {
+    margin-top: 20px;
+    margin-bottom: 30px;
     /* box-shadow: 10px 10px 5px black */
   }
   
@@ -32,6 +45,9 @@ h1 {
   }
   
   p {
+    margin-left: 75px;
+    margin-right: 40px;
+    font-size: 16pt;
     /* font-size: 15px;
     color: gray; */
   }
@@ -41,3 +57,20 @@ h1 {
     color: gray; */
   }
   
+  #Index-Pg {
+    margin-left: 0px;
+    margin-right: 0px;
+    font-size: 14pt;
+  }
+
+  #Comp-Pg {
+    text-align: center;
+    font-size: 14pt;
+    font-style: oblique;
+  }
+
+  #Pg2 {
+    margin-left: 75px;
+    margin-right: 40px;
+    font-size: 16pt;
+  }
